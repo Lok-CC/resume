@@ -54,6 +54,7 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 72px 80px;
+  overflow-x: hidden;
 }
 
 section:not(.hero):nth-child(even){
@@ -152,6 +153,12 @@ header nav li {
 
   header h2 {
     margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  header nav li{
+    margin: 0 5px;
   }
 }
 
@@ -292,14 +299,18 @@ header nav li {
   }
   .experiences .grid li {
     flex-flow: column nowrap;
-    min-width: 500px;
-    padding: 20px;
+    min-width: 320px;
+    padding: 20px 0;
   }
 
   .experiences div.logo{
     background-position: center;
     padding: 0 0 200px;
     height: 500px;
+  }
+
+  .experiences div.descriptions{
+    padding: 0;
   }
   
   .experiences p {
